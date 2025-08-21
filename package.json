@@ -1,0 +1,11 @@
+{
+  "name": "jenkins-node-demo",
+  "version": "1.0.0",
+  "description": "Simple Node.js app to build in Jenkins",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"No tests yet\" && exit 0"
+  },
+  "dependencies": {}
+}

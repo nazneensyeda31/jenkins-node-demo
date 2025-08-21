@@ -23,6 +23,9 @@ pipeline {
         stage('Build & Run') {
             steps {
                 sh 'npm start &'
+                sh 'npm install -g pm2'
+                sh 'pm2 delete demo-app || true'  // stop old instance if running
+                sh 'pm2 start app.js --name demo-app'
             }
         }
     }
